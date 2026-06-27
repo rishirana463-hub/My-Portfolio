@@ -1,14 +1,23 @@
 # Rishi Rana Portfolio
 
-A modern personal portfolio built with React and Vite. It presents my background as a Frontend Developer and Software Development student, showcases selected projects, highlights experience and education, and includes a downloadable resume.
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?logo=tailwindcss&logoColor=white)
+![License](https://img.shields.io/badge/License-Unlicensed-lightgrey)
 
-## Features
+A clean, responsive personal portfolio for Rishi Rana, a Frontend Developer and Software Development student. It highlights selected projects, experience, education, skills, and a downloadable resume in a polished single-page layout.
 
-- Animated hero section with typewriter text and smooth motion effects.
-- Project showcase with featured and smaller project cards.
-- About, experience, education, and contact sections.
-- Responsive layout designed for desktop and mobile.
-- Resume download from the portfolio itself.
+## Overview
+
+This portfolio is built to feel fast, focused, and easy to scan. The design emphasizes strong typography, smooth motion, reusable components, and a direct path to the resume and contact links.
+
+## Highlights
+
+- Animated hero section with typewriter text and subtle motion effects.
+- Project showcase with featured cards and smaller supporting projects.
+- Dedicated About, Experience, Education, and Contact sections.
+- Responsive layout tuned for desktop and mobile.
+- Resume download from the hero section using the PDF in `public/`.
 
 ## Tech Stack
 
@@ -25,7 +34,7 @@ A modern personal portfolio built with React and Vite. It presents my background
 - Node.js 18 or newer
 - npm
 
-### Install
+### Install dependencies
 
 ```bash
 npm install
@@ -49,9 +58,17 @@ npm run build
 npm run preview
 ```
 
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build locally |
+
 ## Resume
 
-The downloadable resume is stored in `public/Rishi_Rana_Resume.pdf` and is linked from the hero section.
+The downloadable resume lives at [public/Rishi_Rana_Resume.pdf](public/Rishi_Rana_Resume.pdf) and is linked from the hero section.
 
 ## Project Structure
 
@@ -60,6 +77,8 @@ The downloadable resume is stored in `public/Rishi_Rana_Resume.pdf` and is linke
 ├── package.json
 ├── public/
 │   └── Rishi_Rana_Resume.pdf
+├── scripts/
+│   └── generate_resume_pdf.py
 └── src/
     ├── App.jsx
     ├── index.css
@@ -75,11 +94,19 @@ The downloadable resume is stored in `public/Rishi_Rana_Resume.pdf` and is linke
         └── SkillTag.jsx
 ```
 
-## Notes
+## Content Sections
 
-- The site is built as a single-page portfolio.
-- The resume button in the hero section points to the PDF in `public/`.
-- You can update the content in the component files under `src/components/`.
+- Hero with CTA buttons and animated role text.
+- About section with a short bio and skills.
+- Projects section with featured work and supporting projects.
+- Experience and education timeline.
+- Contact section with email and social links.
+
+## Updating Content
+
+- Edit the page copy in the files under `src/components/`.
+- Replace the resume PDF in `public/` when you update your CV.
+- Update project links inside `src/components/Projects.jsx`.
 
 ## License
 
