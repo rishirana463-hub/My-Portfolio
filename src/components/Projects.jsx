@@ -57,7 +57,7 @@ export default function Projects() {
         transition={{ duration: 0.6 }}
         className="mb-14 md:pl-12"
       >
-        <p className="mb-3 font-mono text-sm text-violet-soft">02 — work</p>
+        <p className="mb-3 font-mono text-sm text-emerald-soft">02 — work</p>
         <h2 className="font-display text-4xl font-bold text-white sm:text-5xl">
           Featured projects
         </h2>
@@ -94,7 +94,7 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="card card-glow group flex flex-col p-6"
           >
-            <h4 className="font-display text-lg font-bold text-white transition-colors group-hover:text-violet-soft">
+            <h4 className="font-display text-lg font-bold text-white transition-colors group-hover:text-emerald-soft">
               {item.title}
             </h4>
             <p className="mt-2 flex-1 text-sm text-slate-400">{item.description}</p>
@@ -113,7 +113,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={`${item.title} live demo`}
-                className="transition-colors hover:text-coral"
+                className="transition-colors hover:text-gold"
               >
                 <FiExternalLink />
               </a>

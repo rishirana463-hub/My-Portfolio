@@ -13,13 +13,13 @@ export default function ProjectCard({ project, index = 0 }) {
       className="card card-glow group relative flex flex-col overflow-hidden p-7"
     >
       {/* Violet top border accent */}
-      <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-violet via-violet-soft to-coral" />
+      <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald via-emerald-soft to-gold" />
 
       <div className="mb-4 flex items-start justify-between gap-4">
-        <h3 className="font-display text-2xl font-bold text-white transition-colors group-hover:text-violet-soft">
+        <h3 className="font-display text-2xl font-bold text-white transition-colors group-hover:text-emerald-soft">
           {title}
         </h3>
-        <FiArrowUpRight className="mt-1 shrink-0 text-2xl text-slate-600 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-coral" />
+        <FiArrowUpRight className="mt-1 shrink-0 text-2xl text-slate-600 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-gold" />
       </div>
 
       <p className="mb-6 flex-1 text-slate-400">{description}</p>
@@ -28,7 +28,7 @@ export default function ProjectCard({ project, index = 0 }) {
         {stack.map((tech) => (
           <li
             key={tech}
-            className="rounded-md bg-violet/10 px-2.5 py-1 font-mono text-xs text-violet-soft"
+            className="rounded-md bg-emerald/10 px-2.5 py-1 font-mono text-xs text-emerald-soft"
           >
             {tech}
           </li>
@@ -48,7 +48,7 @@ export default function ProjectCard({ project, index = 0 }) {
           href={demo}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 text-slate-300 transition-colors hover:text-coral"
+          className="inline-flex items-center gap-2 text-slate-300 transition-colors hover:text-gold"
         >
           <FiExternalLink /> Live Demo
         </a>

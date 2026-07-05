@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: '#0A0F1E',
-        surface: '#111827',
-        violet: {
-          DEFAULT: '#7C3AED',
-          soft: '#9F67FF',
+        navy: '#080C14',
+        surface: '#0D1A12',
+        emerald: {
+          DEFAULT: '#10B981',
+          soft: '#34D399',
         },
-        coral: '#FF6B6B',
+        gold: '#F59E0B',
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],

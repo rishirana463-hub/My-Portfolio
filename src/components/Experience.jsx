@@ -8,7 +8,7 @@ const TIMELINE = [
     org: 'Open to opportunities',
     detail:
       'Actively looking for a frontend internship where I can ship production UI and grow with a strong team.',
-    accent: 'coral',
+    accent: 'gold',
   },
   {
     period: '2025',
@@ -38,7 +38,7 @@ export default function Experience() {
         transition={{ duration: 0.6 }}
         className="mb-14"
       >
-        <p className="mb-3 font-mono text-sm text-violet-soft">03 — journey</p>
+        <p className="mb-3 font-mono text-sm text-emerald-soft">03 — journey</p>
         <h2 className="font-display text-4xl font-bold text-white sm:text-5xl">
           Experience &amp; education
         </h2>
@@ -46,7 +46,7 @@ export default function Experience() {
 
       <div className="relative md:pl-8">
         {/* Vertical line */}
-        <span className="absolute left-0 top-2 hidden h-[calc(100%-1rem)] w-px bg-gradient-to-b from-violet via-violet/40 to-transparent md:block" />
+        <span className="absolute left-0 top-2 hidden h-[calc(100%-1rem)] w-px bg-gradient-to-b from-emerald via-emerald/40 to-transparent md:block" />
 
         <div className="space-y-10">
           {TIMELINE.map((item, i) => (
@@ -61,15 +61,15 @@ export default function Experience() {
               {/* Node */}
               <span
                 className={`absolute -left-[5px] top-2 hidden h-3 w-3 rounded-full ring-4 ring-navy md:block ${
-                  item.accent === 'coral' ? 'bg-coral' : 'bg-violet'
+                  item.accent === 'gold' ? 'bg-gold' : 'bg-emerald'
                 }`}
               />
               <div className="card p-6 transition-colors hover:border-white/10">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-display text-xl font-bold text-white">{item.title}</h3>
-                  <span className="font-mono text-sm text-violet-soft">{item.period}</span>
+                  <span className="font-mono text-sm text-emerald-soft">{item.period}</span>
                 </div>
-                <p className="mt-1 text-sm text-coral">{item.org}</p>
+                <p className="mt-1 text-sm text-gold">{item.org}</p>
                 <p className="mt-3 text-slate-400">{item.detail}</p>
               </div>
             </motion.div>

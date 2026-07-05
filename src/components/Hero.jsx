@@ -54,9 +54,9 @@ export default function Hero() {
     >
       {/* Floating gradient blobs (CSS only) */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-[8%] top-[18%] h-72 w-72 rounded-full bg-violet/30 blur-3xl animate-blob" />
-        <div className="absolute right-[10%] top-[30%] h-80 w-80 rounded-full bg-coral/20 blur-3xl animate-blob [animation-delay:-6s]" />
-        <div className="absolute bottom-[8%] left-[35%] h-72 w-72 rounded-full bg-violet-soft/20 blur-3xl animate-blob [animation-delay:-12s]" />
+        <div className="absolute left-[8%] top-[18%] h-72 w-72 rounded-full bg-emerald/25 blur-3xl animate-blob" />
+        <div className="absolute right-[10%] top-[30%] h-80 w-80 rounded-full bg-gold/15 blur-3xl animate-blob [animation-delay:-6s]" />
+        <div className="absolute bottom-[8%] left-[35%] h-72 w-72 rounded-full bg-emerald-soft/15 blur-3xl animate-blob [animation-delay:-12s]" />
       </div>
 
       {/* Giant faint watermark word */}
@@ -70,7 +70,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-5 font-mono text-sm text-violet-soft"
+            className="mb-5 font-mono text-sm text-emerald-soft"
           >
             {"<"}hello world{" />"}
           </motion.p>
@@ -83,7 +83,7 @@ export default function Hero() {
           >
             Rishi
             <br />
-            <span className="bg-gradient-to-r from-violet-soft to-coral bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-soft to-gold bg-clip-text text-transparent">
               Rana
             </span>
           </motion.h1>
@@ -96,7 +96,7 @@ export default function Hero() {
             className="mt-6 flex items-center gap-1 font-mono text-xl text-slate-200 sm:text-2xl"
           >
             <span aria-live="polite">{typed}</span>
-            <span className="inline-block w-[2px] animate-blink bg-coral">
+            <span className="inline-block w-[2px] animate-blink bg-gold">
               &nbsp;
             </span>
           </motion.div>
@@ -132,7 +132,7 @@ export default function Hero() {
 
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 transition-colors hover:text-violet-soft"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 transition-colors hover:text-emerald-soft"
         aria-label="Scroll to about"
       >
         <FiArrowDown className="animate-bounce text-2xl" />

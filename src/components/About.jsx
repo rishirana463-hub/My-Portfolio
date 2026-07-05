@@ -26,7 +26,7 @@ export default function About() {
           className="md:col-span-5 md:translate-y-6"
         >
           <div className="relative">
-            <div className="absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-tr from-violet/40 to-coral/30 blur-xl" />
+            <div className="absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-tr from-emerald/35 to-gold/25 blur-xl" />
             {/* TODO: replace placeholder with real photo (e.g. /public/rishi.jpg) */}
             <div className="flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-surface">
               <div className="text-center">
@@ -45,7 +45,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="md:col-span-7"
         >
-          <p className="mb-3 font-mono text-sm text-violet-soft">01 — about</p>
+          <p className="mb-3 font-mono text-sm text-emerald-soft">01 — about</p>
           <h2 className="font-display text-4xl font-bold text-white sm:text-5xl">
             Final-year student,
             <br />

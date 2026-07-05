@@ -20,10 +20,10 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="mx-auto max-w-3xl text-center"
       >
-        <p className="mb-4 font-mono text-sm text-violet-soft">04 — contact</p>
+        <p className="mb-4 font-mono text-sm text-emerald-soft">04 — contact</p>
         <h2 className="font-display text-5xl font-extrabold text-white sm:text-6xl">
           Let&apos;s build{' '}
-          <span className="bg-gradient-to-r from-violet-soft to-coral bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-emerald-soft to-gold bg-clip-text text-transparent">
             something.
           </span>
         </h2>
@@ -42,7 +42,7 @@ export default function Contact() {
             rel="noreferrer"
             aria-label="GitHub"
             className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10
-                       text-xl text-slate-300 transition-all hover:-translate-y-1 hover:border-violet/60 hover:text-violet-soft"
+                       text-xl text-slate-300 transition-all hover:-translate-y-1 hover:border-emerald/60 hover:text-emerald-soft"
           >
             <FiGithub />
           </a>
@@ -52,7 +52,7 @@ export default function Contact() {
             rel="noreferrer"
             aria-label="LinkedIn"
             className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10
-                       text-xl text-slate-300 transition-all hover:-translate-y-1 hover:border-coral/60 hover:text-coral"
+                       text-xl text-slate-300 transition-all hover:-translate-y-1 hover:border-gold/60 hover:text-gold"
           >
             <FiLinkedin />
           </a>

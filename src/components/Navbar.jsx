@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#hero" className="font-display text-xl font-extrabold tracking-tight text-white">
-          Rishi<span className="text-violet-soft">.</span>
+          Rishi<span className="text-emerald-soft">.</span>
         </a>
 
         {/* Desktop links */}
@@ -41,7 +41,7 @@ export default function Navbar() {
                 href={link.href}
                 className="relative text-sm text-slate-300 transition-colors hover:text-white
                            after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0
-                           after:bg-violet after:transition-all hover:after:w-full"
+                           after:bg-emerald after:transition-all hover:after:w-full"
               >
                 {link.label}
               </a>

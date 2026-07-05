@@ -9,10 +9,10 @@
 
   body {
     @apply bg-navy text-slate-200 font-body antialiased;
-    /* Subtle radial wash so the navy never reads as flat black */
+    /* Subtle emerald & amber radial washes so the dark bg never reads as flat */
     background-image:
-      radial-gradient(60rem 60rem at 80% -10%, rgba(124, 58, 237, 0.12), transparent 60%),
-      radial-gradient(50rem 50rem at -10% 110%, rgba(255, 107, 107, 0.08), transparent 60%);
+      radial-gradient(60rem 60rem at 80% -10%, rgba(16, 185, 129, 0.10), transparent 60%),
+      radial-gradient(50rem 50rem at -10% 110%, rgba(245, 158, 11, 0.07), transparent 60%);
     background-attachment: fixed;
   }
 
@@ -22,7 +22,7 @@
   }
 
   ::selection {
-    @apply bg-violet text-white;
+    @apply bg-emerald text-white;
   }
 }
 
@@ -31,31 +31,31 @@
   .watermark {
     @apply font-display font-extrabold uppercase tracking-tighter select-none pointer-events-none;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(124, 58, 237, 0.18);
-    text-stroke: 1px rgba(124, 58, 237, 0.18);
+    -webkit-text-stroke: 1px rgba(16, 185, 129, 0.14);
+    text-stroke: 1px rgba(16, 185, 129, 0.14);
   }
 
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-medium
-           transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-soft;
+           transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-soft;
   }
 
   .btn-primary {
-    @apply btn bg-violet text-white shadow-lg shadow-violet/30 hover:bg-violet-soft hover:-translate-y-0.5;
+    @apply btn bg-emerald text-navy font-semibold shadow-lg shadow-emerald/25 hover:bg-emerald-soft hover:-translate-y-0.5;
   }
 
   .btn-outline {
-    @apply btn border border-coral/70 text-coral hover:bg-coral hover:text-navy hover:-translate-y-0.5;
+    @apply btn border border-gold/70 text-gold hover:bg-gold hover:text-navy hover:-translate-y-0.5;
   }
 
-  /* Surface card with violet glow on hover */
+  /* Surface card with emerald glow on hover */
   .card {
     @apply rounded-2xl border border-white/5 bg-surface transition-all duration-300;
   }
 
   .card-glow:hover {
-    @apply border-violet/50 -translate-y-1;
-    box-shadow: 0 18px 50px -12px rgba(124, 58, 237, 0.35);
+    @apply border-emerald/50 -translate-y-1;
+    box-shadow: 0 18px 50px -12px rgba(16, 185, 129, 0.28);
   }
 }
 
@@ -64,14 +64,14 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0f1e;
+  background: #080C14;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f2937;
+  background: #0f2a1d;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #7c3aed;
+  background: #10B981;
 }
 
 @media (prefers-reduced-motion: reduce) {
